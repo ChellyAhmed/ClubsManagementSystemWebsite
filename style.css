@@ -1,0 +1,66 @@
+nav {
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: #F3F3F3;
+    justify-content: space-between;
+}
+.nav-choices{
+    line-height: 40px;
+    display: flex;
+    margin-right: 10px;
+}
+nav a{
+    font-weight: bold;
+    color: #666;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #666;
+    background-color: #ddd;
+}
+.nav-type{
+    display: flex;
+    line-height: 40px;
+    background-color: #008CBA;
+}
+.nav-type a{
+    color: white;
+    text-decoration: none;
+}
+
+/* ACTIVITY */
+.liner{
+    display: flex;
+    margin: 20px;
+    padding: 5px;
+    border-color:  #008CBA;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+.liner h2{
+    margin: 0;
+}
+.liner-pic{
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 2%;
+}
+.liner-description p , .liner-description span {
+    display: inline;
+}
+
+.navbtn:hover {
+    cursor: pointer;
+}
+.liner-buttons a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
