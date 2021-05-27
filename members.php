@@ -32,7 +32,7 @@ foreach ($db->members("club_id = ?", $_SESSION["club_id"]) as $member) /*Select 
                     <?php }
                 ?> </div> <?php
             if ($user['president'] ==  $_SESSION["club_id"]) { ?>
-                <br><span style="text-align: end;">This user is the president of this club. Can't delete him.</span>
+                <br><span style="text-align: end;">This user is the president of this club.</span>
             <?php }?>
         </div>
     </div>
