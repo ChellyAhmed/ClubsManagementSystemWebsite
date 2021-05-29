@@ -3,7 +3,7 @@ session_start();
 include "includes/head.php"; 
 include "includes/navbars/navbar.php" ;//contains include connection
 //$_SESSION["user_id"]  contains user id
-foreach ($db->clubs() as $club) /*Select all activities of club with id $club*/{ ?>
+foreach ($db->clubs() as $club) /*Select all clubs with id $club*/{ ?>
     <div class="liner">
         <img src="./logos/<?php echo $club['id']; ?>.jpg" class="liner-pic">
         <div class="liner-description" style="width: 100%;">

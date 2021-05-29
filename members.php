@@ -5,7 +5,7 @@ include "includes/navbars/navbar.php"; //contains include connection
 //$_SESSION["user_id"]  contains user id
 $_SESSION["club_id"] = $_GET["club_id"];
 
-//Select club of activity
+//Select club
 $club = $db->clubs[$_SESSION["club_id"]];
 
 foreach ($db->members("club_id = ?", $_SESSION["club_id"]) as $member) /*Select all members of club with id $club_id*/ { ?>
