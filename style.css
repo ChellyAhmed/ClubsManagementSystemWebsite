@@ -26,6 +26,8 @@ nav a:hover{
     display: flex;
     line-height: 40px;
     background-color: #008CBA;
+    padding: 0;
+    margin: 0;
 }
 .nav-type a{
     color: white;
@@ -63,4 +65,8 @@ nav a:hover{
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+
+#dropdownMenuLink:hover {
+    background-color: #008CBA;
 }
