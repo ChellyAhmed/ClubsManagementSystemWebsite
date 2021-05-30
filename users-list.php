@@ -1,5 +1,8 @@
 <?php
 session_start();
+if($_SESSION["user_id"]!=0) {
+    header("Location: login.php");
+}
 include "includes/head.php";
 include "includes/navbars/navbar.php"; //contains include connection
 //$_SESSION["user_id"]  contains user id
@@ -35,8 +38,10 @@ foreach ($db->users("id != ?", 0) as $user) /*Select all non-admin users*/ {
             <?php if ($club_num == 0) {
                 echo "This user hasn't enrolled themselves in any club yet.";
             } ?>
-
             <div class="liner-buttons" style="text-align: end;">
+                <?php if ($user["president"] == null) { ?>
+                   <a href="user-remove.php?id=<?php echo $user["id"]; ?>"><button class="btn btn-danger" >Remove this user</button></a>
+                <?php } ?>
             </div>
         </div>
     </div>

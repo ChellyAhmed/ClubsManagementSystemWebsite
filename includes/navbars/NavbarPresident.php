@@ -4,7 +4,7 @@
         </div>
         <div class="nav-choices">
             <a href="clubs-list.php">CLUBS</a>
-            <a href="">EDIT MY CLUB</a>
+            <a href="edit-my-club.php">EDIT MY CLUB</a>
             <a href="my-clubs.php">MY CLUBS</a>
             <a href="">JOIN A CLUB</a>
         </div>
