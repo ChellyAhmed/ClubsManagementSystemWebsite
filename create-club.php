@@ -8,7 +8,8 @@ include "includes/navbars/navbar.php"; //contains include connection
 <body>
     <h1 style="text-align: center;">Create a club</h1>
 
-    <form action="./club-upload.php" method="post" class="liner" enctype="multipart/form-data" >
+    <form action="./club-upload.php" method="post" enctype="multipart/form-data" >
+    <div class="liner">
         <div class="liner-left-part" >
             <span><strong>Club logo:</strong></span> <br/>
             <input type="file" name="img" accept="image/*">
@@ -21,10 +22,11 @@ include "includes/navbars/navbar.php"; //contains include connection
             <span><strong>Description:</strong></span> <br />
             <textarea name="description"  cols="100" rows="10"
                 placeholder="Please type the description of your club here"></textarea>
-        </div>
-        <button class="btn btn-secondary" type="submit" value="submit" style="width: 100%; margin: 5px;" >Submit</button>
-    </form>
 
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit" value="submit" style="width: 97.5%; margin-left: 1%;">Submit</button>
+    </form>
     <div style="text-align: center;">
         <a href="clubs-list.php">
             <button class="btn btn-light navbtn">back</button>

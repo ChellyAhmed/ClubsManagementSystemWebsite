@@ -1,7 +1,6 @@
 <?php
 session_start();
 include "includes/head.php";
-include 'includes/head.php';
 include "includes/navbars/navbar.php"; //contains include connection
 $current_user_id = $_SESSION['user_id'];
 //$_SESSION["club_id"]  contains club ID

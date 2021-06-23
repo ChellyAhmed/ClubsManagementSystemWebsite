@@ -70,3 +70,21 @@ nav a:hover{
 #dropdownMenuLink:hover {
     background-color: #008CBA;
 }
+
+.login-body{
+    background-image: url("includes/bghome.jpg");
+    background-color: #cccccc;
+}
+
+.login-box{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: fit-content;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}

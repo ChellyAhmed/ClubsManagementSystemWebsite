@@ -5,6 +5,7 @@ include "connection.php";
 //$_SESSION["club_id"] contains club ID
 
 
+
 $name = $_POST["name"];
 $description = $_POST["description"];
 $img = $_FILES['img'];
@@ -34,7 +35,7 @@ if (!(in_array($extension, $is_allowed))) {
 
 if ($img['error'] == 1) {
 ?>
-    <h1>Error</h1>
+    <h1 >Error</h1>
     <p>We apologize. An error might have occured while uploading the file. Please try again and make sure you uploaded a .jpg file.</p>
     <a href="activities.php?club_id=<?php echo $_SESSION['club_id']; ?>">Back to activities list</a>
 <?php
